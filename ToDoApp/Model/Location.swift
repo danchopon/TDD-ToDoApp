@@ -1,14 +1,13 @@
 //
-//  ToDoAppTests.swift
-//  ToDoAppTests
+//  Location.swift
+//  ToDoApp
 //
 //  Created by Daniyar Erkinov on 8/27/19.
 //  Copyright © 2019 danchopon.com. All rights reserved.
 //
 
-import XCTest
-@testable import ToDoApp
+import Foundation
 
-class ToDoAppTests: XCTestCase {
-
+struct Location: Equatable {
+    let name: String
 }

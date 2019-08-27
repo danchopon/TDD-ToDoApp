@@ -1,5 +1,5 @@
 //
-//  ToDoAppTests.swift
+//  LocationTests.swift
 //  ToDoAppTests
 //
 //  Created by Daniyar Erkinov on 8/27/19.
@@ -9,6 +9,5 @@
 import XCTest
 @testable import ToDoApp
 
-class ToDoAppTests: XCTestCase {
-
+class LocationTests: XCTestCase {
 }

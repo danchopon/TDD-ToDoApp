@@ -16,6 +16,8 @@
 		CE2E05BC2315414E00452480 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E05B42315414E00452480 /* ViewController.swift */; };
 		CEC8BBE6231549660041FEEA /* TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8BBE5231549660041FEEA /* TaskTests.swift */; };
 		CEC8BBE823154B140041FEEA /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8BBE723154B140041FEEA /* LocationTests.swift */; };
+		CEC8BBEB23154FA20041FEEA /* TaskManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8BBEA23154FA20041FEEA /* TaskManagerTests.swift */; };
+		CEC8BBEE2315500B0041FEEA /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC8BBED2315500B0041FEEA /* TaskManager.swift */; };
 		CEDACBF2231531D70077A390 /* ToDoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDACBF1231531D70077A390 /* ToDoAppTests.swift */; };
 		CEDACBFD231531D70077A390 /* ToDoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDACBFC231531D70077A390 /* ToDoAppUITests.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +50,8 @@
 		CE2E05B42315414E00452480 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CEC8BBE5231549660041FEEA /* TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTests.swift; sourceTree = "<group>"; };
 		CEC8BBE723154B140041FEEA /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
+		CEC8BBEA23154FA20041FEEA /* TaskManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagerTests.swift; sourceTree = "<group>"; };
+		CEC8BBED2315500B0041FEEA /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
 		CEDACBD9231531CA0077A390 /* ToDoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDACBED231531D70077A390 /* ToDoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDACBF1231531D70077A390 /* ToDoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoAppTests.swift; sourceTree = "<group>"; };
@@ -134,6 +138,22 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		CEC8BBE923154F740041FEEA /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				CEC8BBEA23154FA20041FEEA /* TaskManagerTests.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		CEC8BBEC23154FF60041FEEA /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				CEC8BBED2315500B0041FEEA /* TaskManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		CEDACBD0231531CA0077A390 = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +177,7 @@
 		CEDACBDB231531CA0077A390 /* ToDoApp */ = {
 			isa = PBXGroup;
 			children = (
+				CEC8BBEC23154FF60041FEEA /* Manager */,
 				CEC8BBE3231547F40041FEEA /* View */,
 				CE2E05B22315414E00452480 /* Base.lproj */,
 				CE2E05B32315414E00452480 /* Controller */,
@@ -169,6 +190,7 @@
 		CEDACBF0231531D70077A390 /* ToDoAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				CEC8BBE923154F740041FEEA /* Manager */,
 				CEC8BBE4231549140041FEEA /* Model */,
 				CEDACBF1231531D70077A390 /* ToDoAppTests.swift */,
 				CEDACBF3231531D70077A390 /* Info.plist */,
@@ -318,6 +340,7 @@
 			files = (
 				CE2E05BA2315414E00452480 /* AppDelegate.swift in Sources */,
 				CE2E05B92315414E00452480 /* Task.swift in Sources */,
+				CEC8BBEE2315500B0041FEEA /* TaskManager.swift in Sources */,
 				CE2E05BC2315414E00452480 /* ViewController.swift in Sources */,
 				CE2E05B82315414E00452480 /* Location.swift in Sources */,
 			);
@@ -329,6 +352,7 @@
 			files = (
 				CEC8BBE6231549660041FEEA /* TaskTests.swift in Sources */,
 				CEC8BBE823154B140041FEEA /* LocationTests.swift in Sources */,
+				CEC8BBEB23154FA20041FEEA /* TaskManagerTests.swift in Sources */,
 				CEDACBF2231531D70077A390 /* ToDoAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

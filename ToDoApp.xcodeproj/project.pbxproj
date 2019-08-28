@@ -11,6 +11,7 @@
 		CE14BC2E231653DB00F23B25 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE14BC2D231653DB00F23B25 /* DataProvider.swift */; };
 		CE14BC302316574F00F23B25 /* DataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE14BC2F2316574F00F23B25 /* DataProviderTests.swift */; };
 		CE14BC3223165CE700F23B25 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE14BC3123165CE700F23B25 /* TaskCell.swift */; };
+		CE14BC3523167C1C00F23B25 /* TaskCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE14BC3423167C1C00F23B25 /* TaskCellTests.swift */; };
 		CE2E05B52315414E00452480 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2E05A82315414E00452480 /* Assets.xcassets */; };
 		CE2E05B62315414E00452480 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2E05A92315414E00452480 /* LaunchScreen.storyboard */; };
 		CE2E05B72315414E00452480 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2E05AB2315414E00452480 /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		CE14BC2D231653DB00F23B25 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		CE14BC2F2316574F00F23B25 /* DataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderTests.swift; sourceTree = "<group>"; };
 		CE14BC3123165CE700F23B25 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		CE14BC3423167C1C00F23B25 /* TaskCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellTests.swift; sourceTree = "<group>"; };
 		CE2E05A82315414E00452480 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE2E05AA2315414E00452480 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE2E05AC2315414E00452480 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -101,6 +103,14 @@
 				CE14BC2F2316574F00F23B25 /* DataProviderTests.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		CE14BC3323167C0700F23B25 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE14BC3423167C1C00F23B25 /* TaskCellTests.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		CE2E05A72315414E00452480 /* Supporting Files */ = {
@@ -209,6 +219,7 @@
 		CEDACBF0231531D70077A390 /* ToDoAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				CE14BC3323167C0700F23B25 /* View */,
 				CE14BC2A23164EEB00F23B25 /* Controller */,
 				CEC8BBE923154F740041FEEA /* Manager */,
 				CEC8BBE4231549140041FEEA /* Model */,
@@ -374,6 +385,7 @@
 			files = (
 				CEC8BBE6231549660041FEEA /* TaskTests.swift in Sources */,
 				CEC8BBE823154B140041FEEA /* LocationTests.swift in Sources */,
+				CE14BC3523167C1C00F23B25 /* TaskCellTests.swift in Sources */,
 				CE14BC302316574F00F23B25 /* DataProviderTests.swift in Sources */,
 				CEC8BBEB23154FA20041FEEA /* TaskManagerTests.swift in Sources */,
 				CE14BC2C23164F5400F23B25 /* TaskListViewControllerTests.swift in Sources */,

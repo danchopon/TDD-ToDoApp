@@ -12,4 +12,8 @@ class TaskCell: UITableViewCell {
     static var reuseIdentifier: String {
         return String(describing: self)
     }
+    
+    func configure(withTask task: Task) {
+        
+    }
 }

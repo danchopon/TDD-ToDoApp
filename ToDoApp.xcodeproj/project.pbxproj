@@ -137,6 +137,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		CE20C5EC2317AFBB00DB2CB0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEDACBF1231531D70077A390 /* ToDoAppTests.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		CE2E05A72315414E00452480 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,7 +260,7 @@
 				CE14BC2A23164EEB00F23B25 /* Controller */,
 				CEC8BBE923154F740041FEEA /* Manager */,
 				CEC8BBE4231549140041FEEA /* Model */,
-				CEDACBF1231531D70077A390 /* ToDoAppTests.swift */,
+				CE20C5EC2317AFBB00DB2CB0 /* Supporting Files */,
 				CEDACBF3231531D70077A390 /* Info.plist */,
 			);
 			path = ToDoAppTests;

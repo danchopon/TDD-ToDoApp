@@ -12,6 +12,7 @@ import XCTest
 class ToDoAppTests: XCTestCase {
     
     override func setUp() {
+        super.setUp()
     }
     
     override func tearDown() {

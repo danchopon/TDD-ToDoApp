@@ -30,7 +30,8 @@ class NewTaskViewController: UIViewController {
         let descriptionString = descriptionTextField.text
         let addressString = addressTextField.text
         
-        geocoder.geocodeAddressString(addressString!) { [unowned self] (placemarks, error) in
+        geocoder.geocodeAddressString(addressString!) { [weak self] (placemarks, error) in
+            guard let `self` = self else { return }
             let placemark = placemarks?.first
             let coordinate = placemark?.location?.coordinate
             let location = Location(name: locationString!, coordinate: coordinate)

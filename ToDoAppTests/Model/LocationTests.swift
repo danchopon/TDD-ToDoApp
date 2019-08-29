@@ -47,4 +47,13 @@ class LocationTests: XCTestCase {
         XCTAssertEqual(location, createdLocation)
     }
     
+    func testCanBeSericalizedIntoDictionary() {
+        let coordinate = CLLocationCoordinate2D(latitude: 10.0, longitude: 10.0)
+        let location = Location(name: "Foo", coordinate: coordinate)
+        
+        let generatedLocation = Location(dict: location.dict)
+        
+        XCTAssertEqual(location, generatedLocation)
+    }
+    
 }

@@ -14,6 +14,17 @@ struct Task {
     let date: Date
     let location: Location?
     
+    var dict: PlistDictionary {
+        var dict: PlistDictionary = [:]
+        dict["title"] = title
+        dict["description"] = description
+        dict["date"] = date
+        if let location = location {
+            dict["location"] = location.dict
+        }
+        return dict
+    }
+    
     init(title: String,
          description: String? = nil,
          date: Date? = nil,

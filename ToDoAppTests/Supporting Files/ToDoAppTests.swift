@@ -10,6 +10,12 @@ import XCTest
 @testable import ToDoApp
 
 class ToDoAppTests: XCTestCase {
+    
+    override func setUp() {
+    }
+    
+    override func tearDown() {
+    }
 
     func testInitialViewControllerIsTaskViewController() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)

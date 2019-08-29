@@ -15,12 +15,14 @@ class DetailViewControllerTests: XCTestCase {
     var sut: DetailViewController!
 
     override func setUp() {
+        super.setUp()
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         sut = storyboard.instantiateViewController(withIdentifier: String(describing: DetailViewController.self)) as? DetailViewController
         sut.loadViewIfNeeded()
     }
 
     override func tearDown() {
+        
     }
     
     func testHasTitleLabel() {

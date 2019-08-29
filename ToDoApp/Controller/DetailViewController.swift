@@ -10,11 +10,11 @@ import UIKit
 import MapKit
 
 class DetailViewController: UIViewController {
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var locationLabel: UILabel!
-    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var descriptionLabel: UILabel!
+    @IBOutlet var dateLabel: UILabel!
+    @IBOutlet var locationLabel: UILabel!
+    @IBOutlet var mapView: MKMapView!
     
     var task: Task!
     

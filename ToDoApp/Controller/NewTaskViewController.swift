@@ -15,13 +15,13 @@ class NewTaskViewController: UIViewController {
     
     var geocoder = CLGeocoder()
     
-    @IBOutlet weak var titleTextField: UITextField!
-    @IBOutlet weak var descriptionTextField: UITextField!
-    @IBOutlet weak var locationTextField: UITextField!
-    @IBOutlet weak var dateTextField: UITextField!
-    @IBOutlet weak var addressTextField: UITextField!
-    @IBOutlet weak var saveButton: UIButton!
-    @IBOutlet weak var cancelButton: UIButton!
+    @IBOutlet var titleTextField: UITextField!
+    @IBOutlet var descriptionTextField: UITextField!
+    @IBOutlet var locationTextField: UITextField!
+    @IBOutlet var dateTextField: UITextField!
+    @IBOutlet var addressTextField: UITextField!
+    @IBOutlet var saveButton: UIButton!
+    @IBOutlet var cancelButton: UIButton!
     
     @IBAction func save() {
         let titleString = titleTextField.text
@@ -36,6 +36,10 @@ class NewTaskViewController: UIViewController {
             let location = Location(name: locationString!, coordinate: coordinate)
             let task = Task(title: titleString!, description: descriptionString, date: date, location: location)
             self.taskManager.add(task: task)
+            
+            DispatchQueue.main.async {
+                self.dismiss(animated: true, completion: nil)
+            }
         }
     }
     

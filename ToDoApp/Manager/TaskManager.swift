@@ -36,7 +36,7 @@ class TaskManager {
         if let data = try? Data(contentsOf: tasksURL) {
             guard let dictionaries = try? PropertyListSerialization.propertyList(from: data,
                                                                            options: [],
-                                                                           format: nil) as! [[String: Any]] else { fatalError() }
+                                                                           format: nil) as? [[String: Any]] else { fatalError() }
             
             for dictionary in dictionaries {
                 if let task = Task(dict: dictionary) {
@@ -79,12 +79,14 @@ class TaskManager {
     }
     
     func checkTask(at index: Int) {
-        let task = tasks.remove(at: index)
+        var task = tasks.remove(at: index)
+        task.isDone.toggle()
         doneTasks.append(task)
     }
     
     func uncheckTask(at index: Int) {
-        let task = doneTasks.remove(at: index)
+        var task = doneTasks.remove(at: index)
+        task.isDone.toggle()
         tasks.append(task)
     }
     

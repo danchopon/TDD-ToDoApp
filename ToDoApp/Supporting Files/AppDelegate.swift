@@ -15,7 +15,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        if CommandLine.arguments.contains("--UITesting") {
+            resetState()
+        }
+        
         return true
+    }
+    
+    private func resetState() {
+        let fileManager = FileManager.default
+        guard
+            let documentPath = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first,
+            let url = URL(string: "\(documentPath)tasks.plist") else { return }
+        
+        try? fileManager.removeItem(at: url)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
